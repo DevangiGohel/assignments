@@ -1,0 +1,24 @@
+All html tags
+
+<input> tags
+    text
+    file
+    radio
+    checkbox
+    number
+    date
+    color
+    submit
+    email etc.
+
+<canvas> tag and it's attributes
+    tag without javascript
+<svg> tag and it's attributes
+    tag with javascript
+
+<video> <audio> tag
+
+Geolocation
+web storage
+    local storage
+    session storage
