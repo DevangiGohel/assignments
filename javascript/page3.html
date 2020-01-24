@@ -153,12 +153,17 @@
                         var imageSrc = btnclick.parentElement.parentElement.childNodes[0].childNodes[0].src;
                         var name = btnclick.parentElement.parentElement.childNodes[1].childNodes[0].innerText;
                         var price = btnclick.parentElement.parentElement.childNodes[1].childNodes[1].innerText;
-                    
+                        var qty = btnclick.parentElement.parentElement.childNodes[2].childNodes[1].innerText; 
+                        var q = qty.substr(10);
                         var name2 = name.substr(6);
                         var price2 = price.substr(7);
                         var cartquantity = prompt("Enter Quantity");
-                        var q=document.getElementById("quantity").value;
-                       if(cartquantity<0 || cartquantity>q){
+
+                        console.log(q);
+                        console.log(cartquantity);
+                        //alert(q);
+                       if((parseInt(q)<parseInt(cartquantity)) || (cartquantity<0))
+                       {
                            document.write("Please enter valid quantity...");
                        }
                         total = (price2 * cartquantity);
@@ -170,9 +175,9 @@
         
                         container.appendChild(img);
                         var div=document.createElement("h3");
-                        div.style="margin-top:19px;margin-left:20px;width:90%;height:10%";
-                        var div2=document.createElement("h3");div2.style="margin-left:30px;width:90%;height:10%";
-                        var div3=document.createElement("h5");div3.style="width:70%;height:15%;";
+                        div.style="margin-top:19px;margin-left:20px;width:120%;height:10%";
+                        var div2=document.createElement("h3");div2.style="margin-left:30px;width:150%;height:10%";
+                        var div3=document.createElement("h5");div3.style="width:120%;height:15%;";
                         var div4=document.createElement("div");div4.style="width:70%;height:15%;";
                         var btn=document.createElement('button');
 
