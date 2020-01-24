@@ -1,6 +1,6 @@
 --use DevangiGohelDB;
 
---create table employee(ID int,FirstName varchar(30),LastName varchar(30),City varchar(30));
+--create table employee(ID int PRIMARY KEY,FirstName varchar(30),LastName varchar(30),City varchar(30));
 
 --insert into employee values(1,'aaa','aaa','a');
 
@@ -68,3 +68,12 @@
 --SELECT COUNT(*) FROM employee2;
 
 --SELECT COUNT(ID), City FROM employee GROUP BY City;
+
+--CREATE PROCEDURE p
+--AS
+--BEGIN
+
+   --SELECT e.FirstName,e.LastName
+   --FROM employee e
+  -- INNER JOIN employee e2 ON e.id=e2.id;
+--END
