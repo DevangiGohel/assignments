@@ -77,3 +77,34 @@
    --FROM employee e
   -- INNER JOIN employee e2 ON e.id=e2.id;
 --END
+
+--use DevangiGohelDB;
+--BEGIN
+--BEGIN TRY
+	--SELECT * FROM employee;
+	--SELECT 1/0;
+--END TRY
+--BEGIN CATCH
+	--SELECT 
+      --  ERROR_NUMBER() AS ErrorNumber,
+        --ERROR_MESSAGE() AS ErrorMessage;
+--END CATCH
+--END;
+--GO
+
+--CREATE TABLE json (
+--  fname char(2), lname varchar(255)) ROW_FORMAT=COMPACT;
+
+--SELECT * FROM EMPLOYEE;
+
+--SELECT *  
+-- FROM employee  
+-- FOR JSON AUTO  
+
+--SELECT * FROM employee;
+
+--SELECT * INTO #temp FROM employee;
+
+--SELECT * FROM #temp;
+
+SELECT * FROM employee AS e INNER JOIN #temp AS t ON e.ID = t.ID FOR JSON AUTO;
